@@ -8,16 +8,20 @@
 		<title>Home - Tasty Recipes</title>
 	</head>
 	<body>
-		
+		<!---Innerbody (a layer on top of the background, keeps "Home logo" and "innerframe" joined together) START-->
 		<div id="innerbody">
 		
+			<!--Home Logo-->
 			<a href="index.html"><img id="logo" src="images/logo.png" alt="Tasty Recipes"/></a>
+			<!--Home Logo End-->
 			
+			<!--Innerframe(encloses navigation bar and site content) START-->
 			<div id="innerframe">
 			
+					<!--Navigation bar START-->
 					<div class="navbar">
-					  <a href="index.html"><strong>Home</strong></a>
-					  <a href="calendar.html">Calendar</a>
+					  <a href="index.html">Home</a>
+					  <a href="calendar.html"><strong>Calendar</strong></a>
 					  <div class="dropdown">
 						<button class="dropbtn">Recipes 
 						  <i class="fa fa-caret-down"></i>
@@ -28,7 +32,9 @@
 						</div>
 					  </div> 
 					</div>
-				
+					<!--Navigation bar END-->
+					
+				<!--Content START-->
 				<div id="content">
 						<div id="slideshow">
 							  <img class="mySlides" src="images/meatballs.jpg" alt="meatballs"/>
@@ -42,7 +48,9 @@
 							<a href="calendar.html"><img src="images/calendar_icon.png" alt="calendar icon"/></a>
 						</div>
 				</div>
+				<!--Content END-->
 				
+				<!--Footer START-->
 				<footer>
 					<p>
 						<a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -50,7 +58,11 @@
 						</a>
 					</p>
 				</footer>
+				<!--Footer END-->
+				
 			</div>
+			<!--Innerframe END-->
 		</div>
+		<!--Innerbody END-->
 	</body>
 </html>

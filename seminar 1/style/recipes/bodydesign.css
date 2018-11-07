@@ -29,11 +29,11 @@ body {
 	height: 100%;
     display: grid;
 	grid-template-columns:  1fr 1fr;
-    grid-template-rows:  2fr 4fe 2f;
+    grid-template-rows:  1fr 3fr 1fr;
     grid-template-areas:
      'head head'
-      'image recipe';
-	  'commentsec commentsec'
+      'image recipe'
+	'commentsec commentsec';
  
 }
 
