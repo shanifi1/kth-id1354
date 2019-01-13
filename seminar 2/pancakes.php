@@ -8,7 +8,7 @@ session_start();
 		<link rel="stylesheet" type="text/css" href="style/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="style/menu.css"/>
 		<link rel="stylesheet" type="text/css" href="style/recipes/bodydesign.css"/>
-		<title>Home - Tasty Recipes</title>
+		<title>Pancakes - Tasty Recipes</title>
 	</head>
 	<body>
 		<!---Innerbody (a layer on top of the background) START-->
