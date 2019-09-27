@@ -1,1 +1,0 @@
---defaults-file=C:\UniServerZ\core\mysql\my.ini --init-file=C:\UniServerZ\core\mysql\bin\mysql-init.txt 
