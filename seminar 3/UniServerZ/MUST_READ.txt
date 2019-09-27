@@ -1,0 +1,24 @@
+#############################################################################
+                         Uniform Server Zero XII 
+#############################################################################
+ 6-12-2015
+#############################################################################
+
+ Apache and PHP 7.2.0 binaries are compiled with VC15
+ Be sure that you have installed the Visual C++ Redistributable
+ for Visual Studio 2017 : vc_redist_x64/86.exe
+
+ Download:	
+
+ https://go.microsoft.com/fwlink/?LinkId=746572
+ Visual C++ Redistributable for Visual Studio 2017 
+ Select: vc_redist.x86.exe
+
+----------
+Additional
+----------
+ Note: Uniform Server 12_0_0_ZeroXII does not run on XP or 2003 
+
+--------------------------------------o0o------------------------------------
+            Copyright 2002-2018 The Uniform Server Development Team
+                            All rights reserved.

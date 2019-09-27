@@ -69,7 +69,7 @@ session_start();
 						if($_SESSION['LogInSuccess'] == "No"){
 							echo "<h2>Inloggning misslyckades:</h2>";
 							echo "<p>Fel användarnamn eller lösenord. Prova igen!</p>";
-							echo'<form action="includes/login_action.php" method="post">
+							echo'<form action="views/postmethods/loginPostMethod.php" method="post">
 						  <input type="text" name="username" value="Username">
 						  <br>
 						  <input type="password" name="password" value="Password">
@@ -87,7 +87,7 @@ session_start();
 						else{
 							echo "<h2>Logga in:</h2>";
 							echo "<p>Fyll i formuläret och klicka på knappen för att logga in.</p>";
-							echo'<form action="includes/login_action.php" method="post">
+							echo'<form action="views/postmethods/loginPostMethod.php" method="post">
 						  <input type="text" name="username" value="Username">
 						  <br>
 						  <input type="password" name="password" value="Password">
