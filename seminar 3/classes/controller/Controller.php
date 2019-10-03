@@ -5,11 +5,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'\classes\integration\DatabaseHandler.php
 
 class Controller{
 	private $dbHandler = null;
-	private $commentHandler = null;
 	private $authenticator = null;
 	
-    public function __construct($commentHandler, $dbHandler) {
-		$this->commentHandler = $commentHandler;
+    public function __construct($dbHandler) {
 		$this->dbHandler = $dbHandler;		
 	}
 	

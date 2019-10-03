@@ -77,12 +77,12 @@ class View{
 	}
 	
 	
-	public function login($username, $password){
+	private function login($username, $password){
 		$user = $this->controller->login($username,$password);
 		$this->updateLoginView($user);
 	}
 	
-	public function logout(){
+	private function logout(){
 		$this->controller->logout();
 		$this->resetLoginView();
 	}
