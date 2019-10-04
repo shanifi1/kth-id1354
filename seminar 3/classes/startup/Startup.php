@@ -12,5 +12,7 @@ class Startup{
         $this->controller = new Controller(new DatabaseHandler());
 		$this->view = new View($this->controller);
     }
-	
+	public function getView(){
+		return $this->view;
+	}
 }
