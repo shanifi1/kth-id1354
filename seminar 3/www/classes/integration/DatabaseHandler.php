@@ -1,5 +1,7 @@
 <?php
-
+/*
+Handles communication with the MariaDB SQL database
+*/
 class DatabaseHandler{
 	private $db = "TastyRecipes";
 	private $dbconnect = null;
@@ -15,9 +17,12 @@ class DatabaseHandler{
     }
 	
 	
-	public function update(){
-	}
-	
+	/*
+	Does a SELECT query and returns an array of sql-rows.
+	These rows are associative arrays with their attributes as keys.
+	@param $queryString the query
+	@return array of sql-rows
+	*/
 	public function select($queryString){
 		$result = new \Ds\Vector();
 		
@@ -29,10 +34,17 @@ class DatabaseHandler{
 		return $result->toArray();
 	}
 	
+	/*
+	Removes a row from a table
+	@param the query
+	*/
 	public function delete($queryString){
 		mysqli_query($this->dbconnect, $queryString) or die (mysqli_error($this->dbconnect));
 	}
 	
+	/*
+	Inserts a row into a table
+	*/
 	public function insert($queryString){
 		mysqli_query($this->dbconnect, $queryString) or die (mysqli_error($this->dbconnect));
 	}
