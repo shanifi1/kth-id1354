@@ -14,17 +14,16 @@ class Authenticator{
 	*/
     public function __construct($username, $password){
 		$this->dbHandler = new DatabaseHandler();
+		$result = $this->dbHandler->selectUser($username);
+		$md5_password = md5($password); //password encryption
+
 		
-		$sqlResultVector = $this->dbHandler->select('SELECT Username, Password FROM users WHERE Username = '.'"'.$username.'"');
-		if(isset($sqlResultVector[0])){
-			$this->user = $sqlResultVector[0];
-			
-			if($this->user['Password'] === $password)
-			$this->userLoggedIn = True;
+		if($result->num_rows !== 0){
+			$this->user = $result->fetch_assoc();
+			if($this->user['Password'] === $md5_password)
+				$this->userLoggedIn = True;
 			else
-			$this->userLoggedIn = False;
-			
-			
+				$this->userLoggedIn = False;
 		}
 		else
 			$this->userLoggedIn = False;
